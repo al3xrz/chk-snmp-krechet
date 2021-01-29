@@ -1,0 +1,17 @@
+{
+  "name": "chk-snmp-krechet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "net-ping": "^1.2.3",
+    "net-snmp": "^3.4.1",
+    "node-zabbix-sender": "^1.1.0",
+    "ping": "^0.4.0"
+  }
+}
