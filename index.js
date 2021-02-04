@@ -155,6 +155,18 @@ async function run() {
 
 
             } else {
+                
+                sender.addItem(host.name, 'mssFixation', 0);
+                sender.addItem(host.name, 'mssViolation', 0);
+                sender.addItem(host.name, 'mssV08Violation', 0);
+                sender.addItem(host.name, 'mssV04Violation', 0);
+                sender.addItem(host.name, 'mssV01Violation', 0);
+                sender.send((err, res) => {
+                    if (err) {
+                        console.log(err)
+                    }
+                    console.dir(res)
+                })
                 console.log(`host ${host.ip} unreachable`)
             }
 
